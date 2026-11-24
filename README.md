@@ -22,17 +22,17 @@
 ## Структура проєкту
 
 ```text
-calculeted-graphic-work/
+Calculeted-graphic-work/
 │
 ├── raster-editor/
 │   ├── src/
 │   │   ├── __init__.py
-│   │   ├── image_viewer.py
-│   │   ├── image_document.py
-│   │   ├── image_processor.py
-│   │   ├── main.py
-│   │   ├── main_window.py
-│   │   └── toolbar.py
+│   │   ├── image_document.py         # модуль Files
+│   │   ├── image_processor.py        # обробка зображення
+│   │   ├── image_viewer.py           # модуль Viewer
+│   │   ├── main.py                   # точка входу
+│   │   ├── main_window.py            # головне вікно
+│   │   └── toolbar.py                # модуль Toolbar
 │   │
 │   └── tests/
 │       ├── __init__.py
@@ -60,13 +60,13 @@ calculeted-graphic-work/
 1. Клонувати репозиторій:
 
 ```bash
-git clone <посилання-на-репозиторій>
+git clone https://github.com/ka1tya/Calculeted-graphic-work.git
 ```
 
 2. Перейти до папки проєкту:
 
 ```bash
-cd calculeted-graphic-work
+cd Calculeted-graphic-work
 ```
 
 3. Створити віртуальне середовище:
@@ -104,7 +104,7 @@ python src/main.py
 ## Використання програми
 
 1. Запустити редактор;
-2. Відкрити BMP-зображення через меню ЄФайл - Відкрити...Є або натиснути кнопку на панелі інструментів;
+2. Відкрити BMP-зображення через меню "Файл - Відкрити..." або натиснути кнопку на панелі інструментів;
 3. Вибрати режим кнопкою на панелі інструментів: "Світлота", "Контраст" або "Корекція RGB";
 4. Змінити параметри повзунками на панелі "Обробка зображення" справа;
 5. За потреби натиснути "Скинути налаштування", щоб повернути початковий вигляд зображення;
